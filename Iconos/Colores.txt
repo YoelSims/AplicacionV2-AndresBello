@@ -1,0 +1,12 @@
+Colores:
+Negro: #16191d
+Ventana1: #1f232a
+Ventana2: #2c313c
+Texto1: ffffff
+Texto2: #838ea2
+---------------------------
+Blanco:#ffffff
+Ventana1: #e0dcd5
+Ventana2: #d3cec3
+Texto1: #000000
+Texto2: #7c715d

@@ -13,15 +13,85 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <property name="styleSheet">
+   <string notr="true">*{
+	border: none;
+	backgroudn-color: transparent;
+	background: none;
+	padding: 0;
+	margin:  0;
+	color: #000000;
+}
+
+#centralContenedor{
+	background-color: #e0dcd5;
+}
+
+#subMenuContenedorIzquierdo{
+	background-color: #ffffff;
+}
+
+#subMenuContenedorIzquierdo QPushButton{
+	text-align: left;
+	padding: 5px, 10px;
+	border-top-left-radius:10px;
+	border-botton-left-radius:10px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralContenedor">
    <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item alignment="Qt::AlignLeft">
      <widget class="QWidget" name="menuContenedorIzquierdo" native="true">
       <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
         <widget class="QWidget" name="subMenuContenedorIzquierdo" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignTop">
            <widget class="QFrame" name="frame">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -30,18 +100,55 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
              <item>
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="menuBoton">
+               <property name="toolTip">
+                <string>Menu</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/align-justify.svg</normaloff>:/blackIcons/Black/align-justify.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
             </layout>
            </widget>
           </item>
-          <item>
+          <item alignment="Qt::AlignTop">
            <widget class="QFrame" name="frame_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -49,45 +156,141 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
              <item>
-              <widget class="QPushButton" name="pushButton_2">
+              <widget class="QPushButton" name="inicioBoton">
+               <property name="toolTip">
+                <string>Inicio/</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: #e0dcd5;</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>INICIO</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/home.svg</normaloff>:/blackIcons/Black/home.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_3">
+              <widget class="QPushButton" name="estudianteBoton">
+               <property name="toolTip">
+                <string>Estudiantes</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>ESTUDIANTES</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/user.svg</normaloff>:/blackIcons/Black/user.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_4">
+              <widget class="QPushButton" name="materiaBoton">
+               <property name="toolTip">
+                <string>Materias</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>MATERIAS</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/layers.svg</normaloff>:/blackIcons/Black/layers.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_5">
+              <widget class="QPushButton" name="profesorBoton">
+               <property name="toolTip">
+                <string>Profesores</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>PROFESORES</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/users.svg</normaloff>:/blackIcons/Black/users.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_6">
+              <widget class="QPushButton" name="notaBoton">
+               <property name="toolTip">
+                <string>Notas</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>NOTAS</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/clipboard.svg</normaloff>:/blackIcons/Black/clipboard.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_7">
+              <widget class="QPushButton" name="documentoBoton">
+               <property name="toolTip">
+                <string>Documentos</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>DOCUMENTOS</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/printer.svg</normaloff>:/blackIcons/Black/printer.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -95,6 +298,19 @@
            </widget>
           </item>
           <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="Qt::AlignBottom">
            <widget class="QFrame" name="frame_3">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -103,24 +319,125 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
              <item>
-              <widget class="QPushButton" name="pushButton_8">
+              <widget class="QPushButton" name="ajusteBoton">
+               <property name="toolTip">
+                <string>Ajustes</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>AJUSTES</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/settings.svg</normaloff>:/blackIcons/Black/settings.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_9">
+              <widget class="QPushButton" name="acercaDeBoton">
+               <property name="toolTip">
+                <string>Acerca de</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>ACERCA DE</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/alert-circle.svg</normaloff>:/blackIcons/Black/alert-circle.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_10">
+              <widget class="QPushButton" name="ayudaBoton">
+               <property name="toolTip">
+                <string>Ayuda</string>
+               </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>AYUDA</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/help-circle.svg</normaloff>:/blackIcons/Black/help-circle.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="cerrarSesionBoton">
+               <property name="toolTip">
+                <string>Cerrar Sesion</string>
+               </property>
+               <property name="text">
+                <string>CERRAR SESION</string>
+               </property>
+               <property name="icon">
+                <iconset resource="Iconos/iconosNegros.qrc">
+                 <normaloff>:/blackIcons/Black/lock.svg</normaloff>:/blackIcons/Black/lock.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
                </property>
               </widget>
              </item>
@@ -134,11 +451,21 @@
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="principalCuerpoContenedor" native="true"/>
+     <widget class="QWidget" name="principalCuerpoContenedor" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="Iconos/iconosBlancos.qrc"/>
+  <include location="Iconos/iconosNegros.qrc"/>
+ </resources>
  <connections/>
 </ui>
