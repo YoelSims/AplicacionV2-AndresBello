@@ -17,7 +17,7 @@
    <string notr="true">*{
 	border: none;
 	backgroudn-color: transparent;
-	background: none;
+	background: transparent;
 	padding: 0;
 	margin:  0;
 	color: #000000;
@@ -36,6 +36,15 @@
 	padding: 5px, 10px;
 	border-top-left-radius:10px;
 	border-botton-left-radius:10px;
+}
+
+#menuSubCentroContenedor{
+	background-color: #d3cec3;
+}
+
+#frame_5{
+	background-color: #ffffff;
+	border-radius:10px;
 }</string>
   </property>
   <widget class="QWidget" name="centralContenedor">
@@ -470,10 +479,40 @@
     <item>
      <widget class="QWidget" name="menuCentroContenedor" native="true">
       <layout class="QVBoxLayout" name="verticalLayout_7">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
         <widget class="QWidget" name="menuSubCentroContenedor" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_8">
-          <item>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignTop">
            <widget class="QFrame" name="frame_5">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -510,13 +549,64 @@
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_6">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <widget class="QWidget" name="page">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="font">
+                 <font>
+                  <pointsize>13</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>AJUSTES</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="font">
+                 <font>
+                  <pointsize>13</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>ACERCA DE</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_3">
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="font">
+                 <font>
+                  <pointsize>13</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>AYUDA</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
            </widget>
           </item>
          </layout>
