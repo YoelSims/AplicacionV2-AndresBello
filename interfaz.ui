@@ -656,7 +656,7 @@
         <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>0</number>
+        <number>200</number>
        </property>
        <item alignment="Qt::AlignTop">
         <widget class="QWidget" name="cabeceraContenedor" native="true">
@@ -1123,6 +1123,66 @@
                     </item>
                    </layout>
                   </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="emergenteNotificacionContenedor" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <item>
+           <widget class="QWidget" name="emergenteNotificacionSubContenedor" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_25">
+             <item>
+              <widget class="QFrame" name="frame_10">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QLabel" name="label_16">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Notificacion Mensaje</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignRight">
+                 <widget class="QPushButton" name="pushButton_9">
+                  <property name="toolTip">
+                   <string>Cerrar Notificacion</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="Iconos/iconosNegros.qrc">
+                    <normaloff>:/blackIcons/Black/x-circle.svg</normaloff>:/blackIcons/Black/x-circle.svg</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>24</width>
+                    <height>24</height>
+                   </size>
+                  </property>
                  </widget>
                 </item>
                </layout>
