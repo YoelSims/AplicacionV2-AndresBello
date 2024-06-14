@@ -47,7 +47,7 @@
 	border-radius:10px;
 }
 
-#cabeceraContenedor{
+#cabeceraContenedor, #pieContenedor{
 	background-color: #d3cec3
 }</string>
   </property>
@@ -656,7 +656,7 @@
         <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>200</number>
+        <number>0</number>
        </property>
        <item alignment="Qt::AlignTop">
         <widget class="QWidget" name="cabeceraContenedor" native="true">
