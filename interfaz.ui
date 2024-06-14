@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">*{
 	border: none;
-	backgroudn-color: transparent;
+	background-color: transparent;
 	background: transparent;
 	padding: 0;
 	margin:  0;
@@ -35,7 +35,7 @@
 	text-align: left;
 	padding: 5px, 10px;
 	border-top-left-radius:10px;
-	border-botton-left-radius:10px;
+	border-bottom-left-radius:10px;
 }
 
 #menuSubCentroContenedor,#subMenuDerecho{

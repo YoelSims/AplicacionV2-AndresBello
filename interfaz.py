@@ -17,7 +17,7 @@ class Ui_ventanaPrincipal(object):
         ventanaPrincipal.resize(1081, 724)
         ventanaPrincipal.setStyleSheet("*{\n"
 "    border: none;\n"
-"    backgroudn-color: transparent;\n"
+"    background-color: transparent;\n"
 "    background: transparent;\n"
 "    padding: 0;\n"
 "    margin:  0;\n"
@@ -36,7 +36,7 @@ class Ui_ventanaPrincipal(object):
 "    text-align: left;\n"
 "    padding: 5px, 10px;\n"
 "    border-top-left-radius:10px;\n"
-"    border-botton-left-radius:10px;\n"
+"    border-bottom-left-radius:10px;\n"
 "}\n"
 "\n"
 "#menuSubCentroContenedor,#subMenuDerecho{\n"
@@ -644,13 +644,3 @@ class Ui_ventanaPrincipal(object):
 import iconosBlancos_rc
 import iconosNegros_rc
 import imagenesGeneral_rc
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    ventanaPrincipal = QtWidgets.QMainWindow()
-    ui = Ui_ventanaPrincipal()
-    ui.setupUi(ventanaPrincipal)
-    ventanaPrincipal.show()
-    sys.exit(app.exec_())

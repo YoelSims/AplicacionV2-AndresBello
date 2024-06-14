@@ -1,10 +1,13 @@
-import os
 import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from interfaz import *
+from iconosNegros_rc import *
+from iconosBlancos_rc import *
+from imagenesGeneral_rc import *
 
-class ventanaPrincipal(QMainWindow):
-    def _init_(self, parent=None):
-        QMainWindows.__init__(self)
+class MainWindow(QMainWindow):
+    def __init__(self, parent=None):
+        super(MainWindow, self).__init__(parent)
         self.ui = Ui_ventanaPrincipal()
         self.ui.setupUi(self)
         ###########################
@@ -12,11 +15,9 @@ class ventanaPrincipal(QMainWindow):
         ##########################
         self.show()
 
-#Ejecutar Aplicacion
-
+# Ejecutar Aplicacion
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    #######
-    windows = ventanaPrincipal()
-    windows.show()
+    main_window = MainWindow()
+    main_window.show()
     sys.exit(app.exec_())
