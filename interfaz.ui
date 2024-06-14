@@ -42,7 +42,7 @@
 	background-color: #d3cec3;
 }
 
-#frame_5, #frame_9{
+#frame_5, #frame_9, #emergenteNotificacionSubContenedor{
 	background-color: #ffffff;
 	border-radius:10px;
 }
@@ -1141,6 +1141,20 @@
            <widget class="QWidget" name="emergenteNotificacionSubContenedor" native="true">
             <layout class="QVBoxLayout" name="verticalLayout_25">
              <item>
+              <widget class="QLabel" name="label_17">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Notificacion</string>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="QFrame" name="frame_10">
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -1189,6 +1203,60 @@
               </widget>
              </item>
             </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="pieContenedor" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QFrame" name="frame_12">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Creado por: Yoel Rivero UBV</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="dimensionBarra">
+            <property name="minimumSize">
+             <size>
+              <width>10</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>10</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
            </widget>
           </item>
          </layout>
