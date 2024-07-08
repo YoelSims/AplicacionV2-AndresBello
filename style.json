@@ -1,0 +1,264 @@
+{
+	"QMainWindow":[
+		{
+		"tittle":"Sistema de Gestion Estudiantil AndresBello",
+		"icon":":/imagenes/Imagenes/Logo/2.png",
+		"frameless": true,
+		"transluscentBg": true,
+		"sizeGrip": "dimensionBarra",
+			"navigation":[
+				{
+					"minimize":"minimizarBoton",
+					"close": "cerrarBoton",
+					"restore":[
+						{	
+							"buttonName": "restaurarBoton",
+							"normalIcon": ":/blackIcons/Black/square.svg",
+							"maximizedIcon": ":/blackIcons/Black/copy.svg"
+						}
+					],
+					"moveWindow": "cabeceraContenedor",
+					"tittleBar": "cabeceraContenedor"
+				}
+			]
+		}
+	],	
+	"QCustomSlideMenu": [
+		{
+			"name": "menuContenedorIzquierdo",
+			"defaultSize": [{
+				"width": 40,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 40,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 150,
+				"height": "parent"
+			}],
+			"toggleButton": [{
+				"buttonName": "menuBoton",
+				"icons": [{
+					"whenMenuIsCollapsed": ":/blackIcons/Black/align-justify.svg",
+					"whenMenuIsExpanded": ":/blackIcons/Black/chevron-left.svg"
+				}]
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 350,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+			"name": "menuCentroContenedor",
+			"defaultSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 280,
+				"height": "parent"
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 350,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+			"name": "menuContenedorDerecho",
+			"defaultSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 250,
+				"height": "parent"
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 350,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+			"name": "emergenteNotificacionContenedor",
+			"defaultSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"expandedSize": [{
+				"width": 800,
+				"height": 110
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 300,
+				"animationEasingCurve": "Linear"
+			}],
+			"floatPosition": [
+				{
+					"relativeTo": "centralContenedor",
+					"position": "center-center",
+					"shadow":[
+						{
+							"color": "#f00",
+							"blurRadius": 30,
+							"xOffset": 0,
+							"yOffset": 0
+						}
+					]
+				}
+			],
+			"toggleButton": [{
+				"buttonName": "notificacionBoton"
+			}]
+		}
+	],
+	"QSettings": [
+		{
+			"ThemeSettings": [
+				{
+					"CustomTheme": [
+						{
+							"Background-color": "#ffffff",   
+							"Text-color": "#000000",         
+							"Accent-color": "#ff0000",       
+							"Theme-name": "Default-Theme",
+							"Icons-color": "#ff0000",     
+							"Default-Theme": true,
+							"Create-icons": false            
+						},
+						{
+                            "Background-color": "#fff",
+                            "Text-color": "#000",
+                            "Accent-color": "#40a6e2",
+                            "Theme-name": "Default-Light",
+                            "Icons-color": "#8393a3",
+                            "Default-Theme": false,
+							"Create-icons": false
+                        },
+                        {
+                            "Background-color": "#283a4d",
+                            "Text-color": "#fff",
+                            "Accent-color": "#40a6e2",
+                            "Theme-name": "Default-Dark",
+                            "Icons-color": "#8393a3",
+                            "Default-Theme": false,
+							"Create-icons": false
+                        }
+					]
+				}
+			],
+			"AppSettings": {
+				"OrginizationName": "Complejo Educativo Andres Bello",
+				"ApplicationName": "Sistema Gestion Estudiantil Andres Bello",
+				"OrginizationDormain": "AndresBello.org"
+			}
+		}
+	],
+	"QCustomQStackedWidget":[
+		{
+			"name":"principalPaginas",
+			"transitionAnimation":[
+				{
+					"fade":[
+						{
+							"active": true,
+							"duration":500,
+							"easingCurve": "OutBack"
+						}
+					],
+					"slide":[
+						{
+							"active":true,
+							"duration": 500,
+							"direction": "horizontal",
+							"easingCurve": "OutBack"
+						}
+					]
+				}
+			],
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"inicioBoton": "inicioPagina",
+							"estudianteBoton": "estudiantesPagina",
+							"materiaBoton": "materiasPagina",
+							"profesorBoton": "profesoresPagina",
+							"notaBoton": "notasPagina",
+							"documentoBoton": "documentosPagina",
+							"gradosBoton": "gradosPagina"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"centroPaginas",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"ajustesBoton": "ajustePagina",
+							"acercaDeBoton": "acercaDePagina",
+							"ayudaBoton": "ayudaPagina"
+						}
+					]
+				}
+			]
+		},
+		{	
+			"name":"derechoPaginas",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"perfilBoton": "perfilPagina",
+							"botonMenuEliminar": "eliminarPagina",
+							"masBoton": "masPagina"
+						}
+					]
+				}
+			]
+		}
+	],
+	"QPushButtonGroup": [{
+			"Buttons": [
+				"inicioBoton",
+				"estudianteBoton",
+				"materiaBoton",
+				"profesorBoton",
+				"notaBoton",
+				"documentoBoton",
+				"gradosBoton"
+			],
+			"Style":[{
+				"Active": "background-color: #e0dcd5;border-left: 1px solid #f00;font-weight;bold;",
+				"NotActive": "transparent;"
+			}]
+		},
+		{
+		"Buttons": [
+			"ajustesBoton",
+			"acercaDeBoton",
+			"ayudaBoton"
+			],
+			"Style":[{
+				"Active": "background-color: #d3cec3;border-left: 1px solid #f00;font-weight;bold;",
+				"NotActive": "background-color: transparent;"
+			}]
+		}
+	]			
+}

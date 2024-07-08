@@ -1,0 +1,11 @@
+-h Host
+-U Usuario
+-p Contraseña
+Conexion:
+psql -U postgres -p
+Crear Usuario:
+CREATE USER Usuario WITH PASSWORD 'nuevaContraseña';
+Privilegios:
+GRANT ALL PRIVILEGES ON DATABASE "AndresBello" TO nuevoUSUARIO;
+
+---------------------------------------------------------------

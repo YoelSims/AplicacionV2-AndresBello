@@ -1,0 +1,74 @@
+Cambios en QCustomSlideMenu
+
+Actualizacion de la FuncionFloat, Convirtiendo los datos a int
+def floatMenu(self):
+        if self.float:
+            if len(str(self.floatPosition)) > 0:
+                position = str(self.floatPosition)
+
+                if position == "top-left":
+                    self.setGeometry(QRect(int(self.parent().x()), int(self.parent().y()), self.width(), self.height()))
+
+                if position == "top-right":
+                    self.setGeometry(QRect(int(self.parent().width() - self.width()), int(self.parent().y()), self.width(), self.height()))
+
+                if position == "top-center":
+                    self.setGeometry(QRect(int((self.parent().width() - self.width()) / 2), int(self.parent().y()), self.width(), self.height()))
+
+                if position == "bottom-right":
+                    self.setGeometry(QRect(int(self.parent().width() - self.width()), int(self.parent().height() - self.height()), self.width(), self.height()))
+
+                if position == "bottom-left":
+                    self.setGeometry(QRect(int(self.parent().x()), int(self.parent().height() - self.height()), self.width(), self.height()))
+
+                if position == "bottom-center":
+                    self.setGeometry(QRect(int((self.parent().width() - self.width()) / 2), int(self.parent().height() - self.height()), self.width(), self.height()))
+
+                if position == "center-center":
+                    self.setGeometry(QRect(int((self.parent().width() - self.width()) / 2), int((self.parent().height() - self.height()) / 2), self.width(), self.height()))
+
+                if position == "center-left":
+                    self.setGeometry(QRect(int(self.parent().x()), int((self.parent().height() - self.height()) / 2), self.width(), self.height()))
+
+                if position == "center-right":
+                    self.setGeometry(QRect(int(self.parent().width() - self.width()), int((self.parent().height() - self.height()) / 2), self.width(), self.height()))
+
+# Uso de la función floatMenu
+# Primero asegúrate de inicializar tu clase TuClase correctamente y establecer self.floatPosition adecuadamente
+# Luego llama a la función floatMenu así:
+# tu_clase = TuClase()
+# tu_clase.floatMenu()
+
+Original Funcion:
+def floatMenu(self):
+        if self.float:
+            if len(str(self.floatPosition)) > 0:
+                position = str(self.floatPosition)
+
+                if position == "top-left":
+                    self.setGeometry(QRect(self.parent().x(), self.parent().y(), self.width(), self.height()))
+
+                if position == "top-right":
+                    self.setGeometry(QRect(self.parent().width() - self.width(), self.parent().y(), self.width(), self.height()))
+
+                if position == "top-center":
+                    self.setGeometry(QRect((self.parent().width() - self.width()) / 2, self.parent().y(), self.width(), self.height()))
+
+                if position == "bottom-right":
+                    self.setGeometry(QRect(self.parent().width() - self.width(), self.parent().height() - self.height(), self.width(), self.height()))
+
+
+                if position == "bottom-left":
+                    self.setGeometry(QRect(self.parent().x(), self.parent().height() - self.height(), self.width(), self.height()))
+
+                if position == "bottom-center":
+                    self.setGeometry(QRect((self.parent().width() - self.width()) / 2, self.parent().height() - self.height(), self.width(), self.height()))
+
+                if position == "center-center":
+                    self.setGeometry(QRect((self.parent().width() - self.width()) / 2, (self.parent().height() - self.height()) / 2, self.width(), self.height()))
+
+                if position == "center-left":
+                    self.setGeometry(QRect(self.parent().x(), (self.parent().height() - self.height()) / 2, self.width(), self.height()))
+
+                if position == "center-right":
+                    self.setGeometry(QRect(self.parent().width() - self.width(), (self.parent().height() - self.height()) / 2, self.width(), self.height()))

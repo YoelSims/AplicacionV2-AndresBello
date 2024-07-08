@@ -1,0 +1,41 @@
+----Frontend-Interfaz
+pip install PyQt5
+pip install PySide2
+pip install PySide6
+pip install PySideExtn
+pip install iconify
+iconify-fetch
+iconify-browser
+pip install QT-PyQt-PySide-Custom-Widgets
+
+----Backend-Base y Funciones
+pip install psycopg2
+pip install sqlalchemy
+
+------Actualizar modulos - Online
+pip install --upgrade QT-PyQt-PySide-Custom-Widgets
+
+-----No Online:
+pip install C:\Users\CEREPY\Desktop\Proyecto Andres Bello\AplicacionV2-AndresBello\PiP Modulos\PySide2.5.whl
+
+---Ui
+pyside2-uic interfaz.ui -o interfaz.py 
+
+Custom_Widgets --convert-ui ui --qt-library PySide6
+
+Custom_Widgets --create project
+
+Recursos
+	Pys2 - Pys6
+pyside2-rcc iconosNegros.qrc -o iconosNegros.py
+pyside2-rcc iconosBlancos.qrc -o iconosBlancos.py
+pyside2-rcc imagenesGeneral.qrc -o imagenesGeneral.py
+pyside2-rcc _icons.qrc -o _icons_rc.py
+
+	QT5
+pyrcc5 iconosBlancos.qrc -o iconosBlancos_rc.py
+pyuic5 interfaz.ui -o interfaz.py
+
+pip install QT-PyQt-PySide-Custom-Widgets
+pip install --upgrade QT-PyQt-PySide-Custom-Widgets
+
